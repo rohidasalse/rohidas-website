@@ -71,3 +71,42 @@ function inner() {
 }
 
 // Fetch the JSON data
+async function fetchData() {
+  try {
+    const response = await fetch("data/data.json");
+    const data = await response.json();
+    // console.log(data);
+    return data;
+  } catch (error) {
+    console.error("Fetch error:", error);
+    return [];
+  }
+}
+let newsec = document.getElementById("newsec");
+async function getData() {
+  let data = await fetchData();
+  console.log(data);
+  data.forEach((element) => {
+    let div = document.createElement("div");
+    let heading = document.createElement("h3");
+
+    let para = document.createElement("p");
+    let img = document.createElement("img");
+    let downloadbtn = document.createElement("button");
+    heading.textContent = element.description;
+
+    para.textContent = element.description;
+    img.src = element.imageUrl;
+    downloadbtn.textContent = "download";
+
+    //  classess
+    div.classList.add("training");
+    img.classList.add("ima");
+
+    // appending elements
+
+    div.append(heading, img, para, downloadbtn);
+    newsec.appendChild(div);
+  });
+}
+getData();

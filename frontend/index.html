@@ -22,6 +22,11 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -195,7 +200,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-five">
+      <!-- <section class="section section-five">
         <h2>Certificates</h2>
         <div class="certificate-section">
           <div class="certificate_container">
@@ -264,7 +269,143 @@
             </div>
           </div>
         </div>
-        <!-- <button class="load_more">load more</button> -->
+
+      </section> -->
+      <!-- <section>
+        <div class="sec6" id="newsec"></div>
+      </section> -->
+      <section class="certificate_section">
+        <section class="maincontainer">
+          <div class="card__container swiper">
+            <div class="card__content">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="card__article">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 1</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card__article swiper-slide">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 2</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card__article swiper-slide">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 3</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card__article swiper-slide">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 4</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card__article swiper-slide">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 5</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card__article swiper-slide">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 6</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card__article swiper-slide">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 7</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card__article swiper-slide">
+                  <div class="card__image" style="width: 18rem">
+                    <img
+                      src="https://via.placeholder.com/150"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card__data">
+                    <h5 class="card__name">Card 8</h5>
+                    <p class="card__description">This is a card.</p>
+                    <a href="#" class="">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
       </section>
     </main>
 
@@ -273,7 +414,7 @@
         <div class="footer-buttom-up">
           <h3 class="footer-buttom-up-heading">Get in Touch</h3>
           <div class="footer-buttom-up-form">
-            <form class="contact-form" action="">
+            <form class="contact-form" action="" name="submit-to-google-sheet">
               <div class="form-group">
                 <label for="name"></label>
                 <input type="text" id="name" name="name" placeholder="Name" />
@@ -340,5 +481,47 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwIwI5nklmXfW1ZARod3ZAUQwz7OfYqcIhnVHbfSe9Ddg46mGej3J26dwdsq57KTChqfw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .then(() => {
+            alert("message submited successfully !");
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper(".card__content", {
+        loop: true,
+        spaceBetween: 32,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+          968: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

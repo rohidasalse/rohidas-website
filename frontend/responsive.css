@@ -1,3 +1,26 @@
+/* Extra small devices Phones (<768px) */
+@media (max-width: 767px) {
+  .sec6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+    gap: 0px; /* Space between grid items */
+    margin-left: 0rem;
+    /* margin-right: 5px; */
+  }
+  .training {
+    width: 9rem;
+    margin: 1rem;
+  }
+}
+/* Small devices Tablets (≥768px) */
+@media (max-width: 991px) and (min-width: 768px) {
+}
+/* Medium devices Desktops (≥992px) */
+@media (max-width: 1999px) and (min-width: 992px) {
+}
+/* Large devices Desktops (≥1200px) */
+@media (min-width: 1200px) {
+}
 /* Responsive styles */
 @media (max-width: 1010px) and (min-width: 320px) {
   .arrowbtn {
@@ -8,7 +31,7 @@
 
   .off-screen-menu {
     font-family: "Platypi", serif;
-    max-width: s00px;
+    max-width: 500px;
     position: fixed;
     top: 0;
     right: -1000px;
@@ -18,7 +41,6 @@
     transform: 0.3s ease;
     text-align: center;
     font-size: 1rem;
-    /* color: white; */
   }
   .menu li a {
     color: rgb(20, 20, 20);
@@ -47,6 +69,8 @@
     transform: translate(-50%, 50%);
     transition: 0s ease;
   }
+
+  /* copied */
   .ham-menu span:nth-child(1) {
     top: 25%;
   }
@@ -86,21 +110,7 @@
   .section-one-1 {
     flex-wrap: wrap;
   }
-  /* .section-one-5 */
-  /* .certificate_container {
-    width: fit-content;
-    overflow-x: scroll;
-    white-space: nowrap;
-    display: inline-block;
-  }
-  .certificate_container::-webkit-scrollbar {
-    width: 0;
-  }
-  .certificate {
-    display: inline-block;
-    margin-right: 10px; /* Add spacing between boxes 
-    text-align: center;
-  } */
+
   .sec {
     text-align: center;
     margin: 10px;
